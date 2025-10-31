@@ -38,7 +38,7 @@ CSSのメディアクエリを使用し、スマートフォン（画面幅500px
 
 
 
------** English Version **-----
+----- **English Version** -----
 # My-Portfolio-Site
 
 ## 🌐 1. Project Overview and Live URL
