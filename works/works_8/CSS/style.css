@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+body {
+    color: #333;
+    font-family: sans-serif;
+}
+
+/*COMMON*/
+p {
+    line-height: 1.6;
+}
+.container {
+    max-width: 1000PX;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+/*HEADER*/
+header {
+    max-width: 1000px;
+    margin: 2.5rem auto 0;
+    height: 170px;
+}
+.page-title {
+    font-size: 3.75rem;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+}
+.page-desc {
+    font-size: 1rem;
+    text-align: center;
+}
+
+/*MAIN*/
+main {
+    margin-bottom: 3rem;
+}
+
+/*記事一覧*/
+.post-home {
+    margin-bottom: 3rem;
+}
+.post-title {
+    padding-bottom: 10px;
+    background-image: linear-gradient(45deg, #fff 30%, #ccc 30%, #ccc 50%, #fff 50%, #fff 80%, #ccc 80%, #ccc 100%);
+    background-size: 6px 6px;
+    margin-bottom: 2rem;
+}
+.post-title h2 {
+    background: #FFF;
+    padding: 0.5rem 0.875rem;
+    font-size: 1.5rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.post-title a {
+    color: #333;
+}
+.post-title a:hover {
+    color: #666;
+}
+.post-thumb {
+    margin: 0 0 1rem 0;
+    position: relative;
+}
+.post-date {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Amatic SC', cursive;
+    background: #00cc00;
+    border-radius: 30% 60% 50% 70%/50%;
+    color: #FFF;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    width: 80px;
+    height: 80px;
+}
+.post-date span {
+    border-bottom: 2px rgba(255,255,255,0.5) dotted;
+    padding-bottom: 2px;
+    display: block;
+    width: 60%;
+    margin: 4px auto 0;
+    font-size: 1rem;
+}
+.post-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 40% 70% 50% 30%/50%;
+}
+.btn {
+    text-align: right;
+    margin-top: 1rem;
+}
+.btn a {
+    color: #FFF;
+    padding: 10px 20px;
+    background: #eda1a1;
+    box-shadow: 0 0 0 5px #eda1a1;
+    border: 2px dashed #e38787;
+    border-radius: 5px;
+    display: inline-block;
+}
+.btn a:hover {
+    color: #FFF;
+    background: #e38787;
+    box-shadow: 0 0 0 5px #e38787;
+    border: 2px dashed #eda1a1;
+}
+/*ページ送り*/
+.pagination {
+    display: flex;
+    justify-content: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.pagination a:hover {
+    background: #93d8d0;
+    color: #FFF;
+}
+.pagination a,
+.pagination .current {
+    border-radius: 50%;
+    padding-top: 4px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin: 0 6px;
+}
+.pagination .current {
+    background: #ccc;
+    color: #FFF;
+}
+
+/*FOOTER*/
+footer {
+    background: #949087;
+    text-align: center;
+    padding: 3rem;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+footer li {
+    margin: 0 12px;
+}
+footer a {
+    color: #FFF;
+}
+footer a:hover {
+    color: #c7c3ba;
+}
+footer small {
+    color: #c7c3ba;
+    font-size: 0.875rem;
+}
+
+/*DESKTOP SIZE*/
+@media (min-width: 600px) {
+    /*LAYOUT*/
+    .cintainer {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+        padding: 1rem 2.5rem 2.5rem;
+    }
+    .post-home {
+        height: 400px;
+    }
+
+    /*HEADER*/
+    header {
+        height: 190px;
+    }
+    .page-title {
+        margin: 1rem 0;
+    }
+    .page-desc {
+        font-size: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    /*MAIN*/
+    .post-title h2 br {
+        display: none;
+    }
+    .post-thumb {
+        margin: 0 3rem 1rem 0;
+        float: left;
+    }
+    .post-img {
+        width: 400px;
+        height: 250px;
+    }
+}
