@@ -38,6 +38,8 @@ CSSのメディアクエリを使用し、スマートフォン（画面幅500px
 
 
 
+
+
 ----- **English Version** -----
 # My-Portfolio-Site
 
